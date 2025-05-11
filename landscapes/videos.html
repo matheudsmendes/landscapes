@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos - Galeria de Artes</title>
+    <link rel="icon" href="https://img.freepik.com/vetores-premium/destaque-se-com-estilo-criando-logotipos-unicos-que-definem-e-elevam-a-identidade-da-sua-marca_579306-22676.jpg?semt=ais_hybrid&w=740" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ESTILOS ESPECÍFICOS PARA VÍDEOS */
+        .gallery {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1400px;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* RESPONSIVIDADE */
+        @media (max-width: 1200px) {
+            .gallery { grid-template-columns: repeat(3, 1fr); }
+        }
+        
+        @media (max-width: 768px) {
+            .gallery { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeria de Artes</h1>
+        <nav>
+            <ul class="nav-buttons">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <!-- PRIMEIRA LINHA COM 4 VÍDEOS -->
+            <div class="gallery-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/l8ABbId2VaE" 
+                            allowfullscreen></iframe>
+                </div>
+                <p>Fonte Instagram (@itsbrillion)</p>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/_uobAs-uXUA?feature=share" 
+                            allowfullscreen></iframe>
+                </div>
+                <p>Fonte Instagram (@youpastreality)</p>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/OwDn10j6T-g?feature=share" 
+                            allowfullscreen></iframe>
+                </div>
+                <p>Fonte Instagram (@walhosh)</p>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/fjY8GnXdKgI?feature=share" 
+                            allowfullscreen></iframe>
+                </div>
+                <p>Fonte Instagram (@mnovius0)</p>
+            </div>
+            
+            <!-- SEGUNDA LINHA COM 4 VÍDEOS -->
+            <div class="gallery-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/STkcAil7Ynw?feature=share" 
+                            allowfullscreen></iframe>
+                </div>
+                <p>Fonte Instagram (@digit4lmemories)</p>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/IlHahmsGcIY?feature=share" 
+                            allowfullscreen></iframe>
+                </div>
+                <p>Fonte Instagram (@evilliminal)</p>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/lgKwtk7U9KM?feature=share" 
+                            allowfullscreen></iframe>
+                </div>
+                <p>Fonte Instagram (@f4dedmemory)</p>
+            </div>
+            
+            <div class="gallery-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/20ksMIPsKhw?feature=share" 
+                            allowfullscreen></iframe>
+                </div>
+                <p>Fonte Instagram (@vydeos)</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Galeria de Artes SPI 2025</p>
+    </footer>
+</body>
+</html>
