@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Artes</title>
-    <link rel="shortcut icon" href="imagens/fav.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.freepik.com/vetores-premium/destaque-se-com-estilo-criando-logotipos-unicos-que-definem-e-elevam-a-identidade-da-sua-marca_579306-22676.jpg?semt=ais_hybrid&w=740" type="image/png">
 </head>
 <body>
-    <!-- Barra de Navegação -->
     <header>
+        <h1>Galeria de Artes</h1>
         <nav>
-            <h1>Galeria de Artes</h1>
-            <ul>
-                <li><a href="#fotos">Fotos</a></li>
-                <li><a href="#videos">Vídeos</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+            <ul class="nav-buttons">
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Galeria de Imagens -->
     <main>
-        <section class="gallery" id="fotos">
-            <div class="image-container">
-                <img src="imagens/our.cinematic-20250331-0005.jpg" alt="Paisagem 1">
-                <img src="imagens/our.cinematic-20250331-0006.jpg" alt="Paisagem 2">
-                <img src="imagens/ptcm_photography-20250331-0001.jpg" alt="Paisagem 3">
-                <img src="imagens/raylivez-20250331-0001.jpg" alt="Paisagem 4">
+        <div class="gallery">
+            <!-- Imagens via URL (substitua com seus links reais) -->
+            <div class="gallery-item">
+                <img src="https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg" alt="Paisagem 1">
+                <p>Pôr do sol</p>
             </div>
-        </section>
+            <div class="gallery-item">
+                <img src="https://media.istockphoto.com/id/1129473522/pt/foto/colorful-panoramic-mountain-view-at-sunrise.jpg?s=612x612&w=0&k=20&c=K8vSoS4nLRuQQrwR7X02pf4KpU5tYesZBuN-Hmb0X_U=" alt="Paisagem 2">
+                <p>Natureza</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg.webp" alt="Paisagem 3">
+                <p>Natureza</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.democrart.com.br/cdn/shop/files/quadros-democrart-gustavo-jacob-paisagem-baixa-luz-vias-MT-cook-aoraki-NZ-galeria-de-arte-obras-de-arte.jpg?v=1740078074" alt="Paisagem 4">
+                <p>Montanhas</p>
+            </div>
+        </div>
     </main>
 
-    <!-- Rodapé -->
     <footer>
         <p>Galeria de Artes SPI 2025</p>
     </footer>
