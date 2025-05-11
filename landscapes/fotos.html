@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Artes</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Ajustes específicos para esta página */
+        .gallery {
+            grid-template-columns: repeat(5, 1fr) !important;
+        }
+        .gallery-item img {
+            height: 300px;
+        }
+        @media (max-width: 1200px) {
+            .gallery { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .gallery { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 480px) {
+            .gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeria de Artes</h1>
+        <nav>
+            <ul class="nav-buttons">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <!-- Primeira linha -->
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/90/0f/a3/900fa3d87fbe85330a4e53d80368a748.jpg" alt="Obra de Arte 1">
+                <p>Obra 1 (Frutiger Aero)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/4e/be/ad/4ebead387d25456549c3c308e1a39940.jpg" alt="Obra de Arte 2">
+                <p>Obra 2 (Frutiger Aero)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/35/a9/c5/35a9c5913602afd9d6aaa023191127e6.jpg" alt="Obra de Arte 3">
+                <p>Obra 3 (Frutiger Aero)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/b4/62/08/b46208e495b7ddd429166bfafe42a112.jpg" alt="Obra de Arte 4">
+                <p>Obra 4 (Frutiger Aero)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/e3/05/c3/e305c34ffa0edd8bea0846839352c27e.jpg" alt="Obra de Arte 5">
+                <p>Obra 5 (Frutiger Aero)</p>
+            </div>
+
+            <!-- Segunda linha -->
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/b5/7d/25/b57d25c60dc5a41237c02b8c187c7067.jpg" alt="Obra de Arte 6">
+                <p>Obra 6 (Blue Hour)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/5e/1a/d0/5e1ad053558de92381e4875794fcdb2f.jpg" alt="Obra de Arte 7">
+                <p>Obra 7 (Blue Hour)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/79/9d/15/799d151be8cb60c76096cd4cd17cd872.jpg" alt="Obra de Arte 8">
+                <p>Obra 8 (VaporWave)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/07/9a/17/079a17b4fe6926bbd068d7ba2e494a03.jpg" alt="Obra de Arte 9">
+                <p>Obra 9 (VaporWave)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/bb/41/a3/bb41a3f940b91fdb20e6516f485ee6dd.jpg" alt="Obra de Arte 10">
+                <p>Obra 10 (VaporWave)</p>
+            </div>
+
+            <!-- Terceira linha -->
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/b5/d8/60/b5d860898246eeb0956c1778fc9f2cef.jpg" alt="Obra de Arte 11">
+                <p>Obra 11 (Aurora Boreal)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/2a/90/31/2a903122778eee13aec12f67c1de97ca.jpg" alt="Obra de Arte 12">
+                <p>Obra 12 (Aurora Boreal)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/ab/73/56/ab735640fdd92c7f9a0ce251abfa1d29.jpg" alt="Obra de Arte 13">
+                <p>Obra 13 (Aurora Boreal)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/27/7b/a9/277ba9a531b6a8ceb20d46f5118e3ec7.jpg" alt="Obra de Arte 14">
+                <p>Obra 14 (Sunset)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.pinimg.com/736x/0c/66/59/0c66591c38a2d72774ce8d8d64dd4645.jpg" alt="Obra de Arte 15">
+                <p>Obra 15 (Sunset)</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Galeria de Artes SPI 2025</p>
+    </footer>
+</body>
+</html>
